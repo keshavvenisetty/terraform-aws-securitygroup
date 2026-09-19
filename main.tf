@@ -3,7 +3,11 @@ resource "aws_security_group" "main" {
   description = var.sg_description
   vpc_id      = var.vpc_id
 
+<<<<<<< HEAD
  egress {
+=======
+  egress {
+>>>>>>> 6b7107cf9a195fff9e9dfb060d665fbb238b4650
     from_port        = 0
     to_port          = 0
     protocol         = "-1"
@@ -17,5 +21,11 @@ resource "aws_security_group" "main" {
     {
         Name = "${var.project}-${var.environment}-${var.sg_name}"
     }
+<<<<<<< HEAD
   )
 }
+=======
+
+  )
+}
+>>>>>>> 6b7107cf9a195fff9e9dfb060d665fbb238b4650
